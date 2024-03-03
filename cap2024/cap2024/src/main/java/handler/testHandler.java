@@ -17,9 +17,10 @@ public class testHandler {
     String user = "root";
     String passwd = "1234";		//MySQL에 저장한 root 계정의 비밀번호를 적어주면 된다.
 
+    /*
     public static void main(String[] args) {
 
-        /*
+
         List<Dao> daoList = new ArrayList<>();
         for (int i = 1; i <= 3; i++) {
             String json = ""; // JSON 데이터를 적절히 초기화
@@ -45,7 +46,7 @@ public class testHandler {
                 daoList.add(dao);
             }
         }
-        */
+
 
         String test1 = "{\n" +
                 "  \"stock\": \"bitcoin\",\n" +
@@ -69,7 +70,6 @@ public class testHandler {
 
         testHandler db = new testHandler();
 
-        /* 데이터베이스 관련 코드는 try-catch문으로 예외 처리를 꼭 해주어야 한다. */
 
         try {
             //데이터베이스 연결
@@ -122,6 +122,8 @@ public class testHandler {
             }
         }
     }
+    */
+
     //테이블 생성
     void createUserTable() {
         try {
