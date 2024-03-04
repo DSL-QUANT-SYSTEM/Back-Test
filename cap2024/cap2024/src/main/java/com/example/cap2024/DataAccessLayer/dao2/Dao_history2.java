@@ -1,28 +1,31 @@
-package com.example.cap2024.DataAccessLayer.dao3;
+package com.example.cap2024.DataAccessLayer.dao2;
 
-import com.example.cap2024.DataAccessLayer.Dao;
+import com.example.cap2024.DataAccessLayer.Dao_history;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class Dao3 implements Dao {
+public class Dao_history2 implements Dao_history {
 
     private String stock;
     private String date;
-    private int closePrice;
-    private int openPrice;
-    private int highestPrice;
-    private int lowestPrice;
+    private double closePrice;
+    private double openPrice;
+    private double highestPrice;
+    private double lowestPrice;
+    private double adjClosePrice;
+    private double volume;
+
     public String getDataFromDatabase() {
-        // DAO3에서는 데이터베이스와 상호 작용을 위한 로직을 구현합니다.
-        return "Data from Database (Dao3)";
+        // DAO2에서는 데이터베이스와 상호 작용을 위한 로직을 구현합니다.
+        return "Data from Database (Dao2)";
     }
 
     @Override
-    public Dao fromJson(String json){
+    public Dao_history fromJson(String json){
         ObjectMapper objectMapper = new ObjectMapper();
         try{
-            return objectMapper.readValue(json, Dao3.class);
+            return objectMapper.readValue(json, Dao_history2.class);
         } catch (Exception e){
             e.printStackTrace();
             return null;
@@ -45,31 +48,34 @@ public class Dao3 implements Dao {
     public String getStock(){
         return this.stock;
     }
-
     @Override
     public String getDate(){
         return this.date;
     }
 
     @Override
-    public int getClosePrice(){
+    public double getClosePrice(){
         return this.closePrice;
     }
 
     @Override
-    public int getOpenPrice(){
+    public double getOpenPrice(){
         return this.openPrice;
     }
 
     @Override
-    public int getHighestPrice(){
+    public double getHighestPrice(){
         return this.highestPrice;
     }
 
     @Override
-    public int getLowestPrice(){
+    public double getLowestPrice(){
         return this.lowestPrice;
     }
+    @Override
+    public double getAdjClosePrice() { return this.adjClosePrice; }
+    @Override
+    public double getVolume() { return this.volume;}
 
     public void setStock(String stockInput){this.stock = stockInput;}
     @Override
@@ -78,22 +84,30 @@ public class Dao3 implements Dao {
     }
 
     @Override
-    public void setClosePrice(int closePriceInput){
+    public void setClosePrice(double closePriceInput){
         this.closePrice = closePriceInput;
     }
 
     @Override
-    public void setOpenPrice(int openPriceInput){
+    public void setOpenPrice(double openPriceInput){
         this.openPrice = openPriceInput;
     }
 
     @Override
-    public void setHighestPrice(int highestPriceInput){
+    public void setHighestPrice(double highestPriceInput){
         this.highestPrice = highestPriceInput;
     }
 
     @Override
-    public void setLowestPrice(int lowestPriceInput){
+    public void setLowestPrice(double lowestPriceInput){
         this.lowestPrice = lowestPriceInput;
+    }
+    @Override
+    public void setAdjClosePrice(double adjClosePriceInput){
+        this.adjClosePrice=adjClosePriceInput;
+    }
+    @Override
+    public void setVolume(double volumeInput){
+        this.volume=volumeInput;
     }
 }
