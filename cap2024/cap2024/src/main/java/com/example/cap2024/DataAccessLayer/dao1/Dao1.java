@@ -1,8 +1,7 @@
-package DataAccessLayer.dao1;
+package com.example.cap2024.DataAccessLayer.dao1;
 
-import DataAccessLayer.Dao;
+import com.example.cap2024.DataAccessLayer.Dao;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -1,6 +1,6 @@
-package handler.DatabaseHandler;
+package com.example.cap2024.handler.DatabaseHandler;
 
-import handler.SystemConfigHandler.DataBaseConfig;
+import com.example.cap2024.handler.SystemConfigHandler.DataBaseConfig;
 
 import java.io.IOException;
 import java.sql.*;

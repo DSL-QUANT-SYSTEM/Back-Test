@@ -1,4 +1,4 @@
-package handler.DatabaseHandler;
+package com.example.cap2024.handler.DatabaseHandler;
 
 import java.sql.*;
 import java.util.ArrayList;

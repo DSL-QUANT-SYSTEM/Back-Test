@@ -1,6 +1,4 @@
-package handler.DatabaseHandler;
-
-import handler.DatabaseHandler.DBHandler;
+package com.example.cap2024.handler.DatabaseHandler;
 
 public class SQLBase {
     protected DBHandler handler;

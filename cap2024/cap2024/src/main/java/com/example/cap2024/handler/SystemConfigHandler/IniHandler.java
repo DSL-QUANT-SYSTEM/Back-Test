@@ -1,8 +1,7 @@
-package handler.SystemConfigHandler;
+package com.example.cap2024.handler.SystemConfigHandler;
 
 import java.io.IOException;
 import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
 
 public class IniHandler {
     public String iniPath = "";

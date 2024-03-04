@@ -1,14 +1,8 @@
-package handler;
+package com.example.cap2024.handler;
 
-import DataAccessLayer.Dao;
-import DataAccessLayer.dao1.Dao1;
-import DataAccessLayer.dao2.Dao2;
-import DataAccessLayer.dao3.Dao3;
+import com.example.cap2024.DataAccessLayer.Dao;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class testHandler {
     Connection con = null;

@@ -1,4 +1,4 @@
-package handler.SecureHandler;
+package com.example.cap2024.handler.SecureHandler;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

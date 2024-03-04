@@ -1,7 +1,6 @@
-package handler.SystemConfigHandler;
+package com.example.cap2024.handler.SystemConfigHandler;
 
-import handler.SecureHandler.SecureObject;
-import handler.SystemConfigHandler.IniHandler;
+import com.example.cap2024.handler.SecureHandler.SecureObject;
 
 import java.util.Properties;
 import java.util.logging.Logger;

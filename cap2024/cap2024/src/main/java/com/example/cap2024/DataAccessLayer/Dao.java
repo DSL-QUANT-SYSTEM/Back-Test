@@ -1,4 +1,4 @@
-package DataAccessLayer;
+package com.example.cap2024.DataAccessLayer;
 
 public interface Dao {
 
