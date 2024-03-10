@@ -17,7 +17,7 @@ public class Dao_log2 implements Dao_log {
     private String log_name_id;
     public String getDataFromDatabase() {
         // DAO2에서는 데이터베이스와 상호 작용을 위한 로직을 구현합니다.
-        return "Data from Database (Dao3)";
+        return "Data from Database (Dao2)";
     }
 
     @Override
